@@ -1,0 +1,314 @@
+
+/* API Temple Results */
+
+.temple-results-count {
+  max-width: 1200px;
+  margin: 0 auto 22px;
+  color: #78695c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.temple-results-message {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 35px 20px;
+  background: #fff8ef;
+  border-radius: 12px;
+  text-align: center;
+  color: #71411d;
+}
+
+.temple-results-message button {
+  background: #c9681d;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 9px;
+}
+
+.temple-description-preview {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  min-height: 40px;
+}
+
+/* Deity API status */
+
+.deity-api-message {
+  max-width: 600px;
+  margin: 25px auto;
+  text-align: center;
+  color: #72523c;
+  line-height: 1.7;
+}
+
+.deity-api-message button {
+  padding: 10px 20px;
+  background: #c9681d;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.deity-api-message button:hover {
+  background: #a85113;
+}
+/* =========================================================
+   ADD TEMPLE
+   ========================================================= */
+
+.add-temple-toolbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 24px;
+}
+
+.add-temple-button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.add-temple-button:hover {
+  transform: translateY(-1px);
+  opacity: 0.88;
+}
+
+
+/* =========================================================
+   ADD TEMPLE PANEL
+   ========================================================= */
+
+.add-temple-panel {
+  width: 100%;
+  margin: 0 0 30px;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.add-temple-header {
+  margin-bottom: 24px;
+}
+
+.add-temple-header h2 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  color: #171717;
+}
+
+.add-temple-header p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.add-temple-form {
+  width: 100%;
+}
+
+.add-temple-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  border-radius: 9px;
+  padding: 11px 13px;
+  background: #fff;
+  color: #222;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #888;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+.form-field textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #999;
+}
+
+.form-field small {
+  color: #888;
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   IMAGE UPLOAD
+   ========================================================= */
+
+.form-field input[type="file"] {
+  padding: 9px;
+  cursor: pointer;
+}
+
+.add-temple-image-preview {
+  width: 220px;
+  height: 150px;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+}
+
+.add-temple-image-preview img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.add-temple-message {
+  margin-top: 20px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.add-temple-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.add-temple-actions button {
+  border: none;
+  border-radius: 9px;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease,
+              transform 0.2s ease;
+}
+
+.add-temple-actions button:hover {
+  transform: translateY(-1px);
+}
+
+.add-temple-actions button:first-child {
+  background: #eee;
+  color: #333;
+}
+
+.add-temple-actions button:last-child {
+  background: #111;
+  color: #fff;
+}
+
+.add-temple-actions button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .add-temple-panel {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .add-temple-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-field.full-width {
+    grid-column: auto;
+  }
+
+  .add-temple-toolbar {
+    justify-content: stretch;
+  }
+
+  .add-temple-button {
+    width: 100%;
+  }
+
+  .add-temple-actions {
+    flex-direction: column-reverse;
+  }
+
+  .add-temple-actions button {
+    width: 100%;
+  }
+
+  .add-temple-image-preview {
+    width: 100%;
+    height: 190px;
+  }
+}
